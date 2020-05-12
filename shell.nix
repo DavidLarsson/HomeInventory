@@ -1,16 +1,15 @@
 with import <nixpkgs> {};
 
-let
-  pythonEnv = python38;
-in mkShell {
+mkShell {
   buildInputs = [
-    pythonEnv
+    python38
+    git
+    emacs
     ];
   shellHook = ''
-    if [ -d ./.venv ]; then
-      rm -rf ./.venv
+    if [ ! -d ./.venv ]; then
+       python -m venv .venv
     fi
-    python -m venv .venv
     source .venv/bin/activate
     pip install --upgrade pip
     pip install -r requirements.txt;
