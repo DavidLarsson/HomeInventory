@@ -1,1 +1,2 @@
-* Setup basic inventory checking
+* TODO Setup basic inventory checking
+* TODO Setup database
