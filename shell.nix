@@ -11,6 +11,7 @@ mkShell {
        python -m venv .venv
     fi
     source .venv/bin/activate
+    export WORKON_HOME=$(realpath .venv)
     pip install --upgrade pip
     pip install -r requirements.txt;
   '';
