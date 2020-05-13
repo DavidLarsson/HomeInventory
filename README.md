@@ -2,7 +2,7 @@
 
 WIP
 
-The easiest way to use this is to run nix-shell in the root folder of the project. This will setup all the dependencies you need and a virtual Python environment.
+The easiest way to use this is to run `nix-shell` in the root folder of the project. This will setup all the dependencies you need and a virtual Python environment.
 
 Currently only the learning folder contains anything that is even remotely useful: run
 ```
