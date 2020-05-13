@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>David Larsson - Fibonacci</title>
+</head>
+<body>
+  <h1>David Larsson - Fibonacci</h1>
+  <form action="/fib/" method="POST">
+    Fibonacci#n: <input name="number" type="text" />
+  </form>
+  {% if fibonacci %}
+  <p>
+    Fibonacci#{{ fibonacci['n'] }}: {{ fibonacci['fib'] }}
+  </p>
+  {% endif %}
+</body>
+</html>
