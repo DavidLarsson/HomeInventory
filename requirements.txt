@@ -1,4 +1,6 @@
+wheel
 virtualenv
+black
 Flask
 sympy
 MarkupSafe
