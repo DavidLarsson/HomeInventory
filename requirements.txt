@@ -4,4 +4,5 @@ black
 Flask
 sympy
 MarkupSafe
+pytest
 
